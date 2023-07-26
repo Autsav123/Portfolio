@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.sidebar{
+    
+   background-color:rgb(157, 156, 156);
+    
+    font-family: 'Roboto', sans-serif;
+    height:100vw;
+    transition:transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 72px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 25px;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color:black;
+}
+.main{
+    /*background-color: yellow;*/
+    width:80vw;
+}
+.container{
+    display:flex;
+}
+.Infocontainer{
+    /*background-color: skyblue;*/
+    height:58vh;
+    width:60vw;
+    margin: 85px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.Mypic img{
+    height:58vh;
+    
+}
+.MyInfo{
+    display:flex;
+  justify-content: center;
+    flex-direction:column;
+}
+.hello{
+    font-size:65px ;
+}
+.name{
+    font-size:50px;
+    font-weight: bold;
+   
+    font-family: 'Raleway', sans-serif;
+   
+}
+.about{
+    font-size: 40px;
+  
+font-family: 'Source Code Pro', monospace;
+}
+.buttons button{
+    padding: 10px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin:0 10 px;
+    cursor:pointer;
+}
+.MoreAbout{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 34px;
+}
+.buttons{
+    margin-top: 34px;;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    margin:23px;
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+.sidebarGo{
+    transform:translate(-443px,0px);
+    position :absolute;
+}
+.hamburger{
+    position: absolute;
+    top: 10px;
+    
+    left: 2px;
+    cursor: pointer
+}
+.ham{
+    margin-top:10px;
+    margin-left:10px;
+}
+.cross{
+    margin-left:300px;
+    margin-top:20px;
+}
+@media (max-width: 1000px){
+    *{
+    background-color: red;
+    }
+    .sidebar {
+    transform: translate(-399px, 0px);
+    position: absolute;
+};
+}
